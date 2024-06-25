@@ -18,7 +18,6 @@ function calculate(){
         //the name of the "rates" it's no longer rates, it's defined as "conversion_rates"
         const taza = data.conversion_rates[moneda_two];
         
-
         cambioEl.innerText = `1 ${moneda_one} = ${taza} ${moneda_two} `;
 
         CantidadEl_two.value = (CantidadEl_one.value * taza).toFixed(2);
@@ -34,11 +33,7 @@ monedaEl_two.addEventListener('input', calculate);
 monedaEl_one.addEventListener('change', calculate);
 monedaEl_two.addEventListener('input', calculate);
 
-taza.addEventListener('click', () => {
-    const temp = monedaEl_one.value;
-    monedaEl_one.value = monedaEl_two.value;
-    monedaEl_two.value = temp;
-    calculate();
-} );
+
+tazaEl.addEventListener('click', calculate);
 
 calculate();
