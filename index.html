@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisa Converter</title>
+    <link rel="stylesheet" href="converter.JS">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Img/unnamed.webp" alt="conversor-icon">
+    <h1>Divisa Converter</h1>
+
+    <div class="container">
+        <div class="moneda"> 
+            <select name="" id="moneda-uno">
+                <option value="CRC" selected>CRC</option>
+                <option value="JPY">JPY</option>
+                <option value="COP">COP</option>
+                <option value="USD">USD</option>
+            </select>
+            <input type="number" 
+            id="cantidad-uno" 
+            placeholder="0"
+            value="1"
+            >
+        </div>
+        <div class="taza-cambio-container">
+            <button class="btn" id="taza">
+                Convert
+            </button>
+            <div class="cambio" id="cambio"></div>
+        </div>
+        <div class="moneda"> 
+            <select name="" id="moneda-dos">
+                <option value="CRC">CRC</option>
+                <option value="JPY">JPY</option>
+                <option value="COP">COP</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" 
+            id="cantidad-dos" 
+            placeholder="0"
+            value="1"
+            >
+        </div>
+    </div>
+</body>
+</html>
